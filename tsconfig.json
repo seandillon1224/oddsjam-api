@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ES2015",
     "target": "es2017",
+    "moduleResolution": "Node",
     "noImplicitAny": true,
-    "moduleResolution": "node",
+    "declaration": true,
     "sourceMap": true,
     "preserveConstEnums": true,
     "outDir": "./lib"
