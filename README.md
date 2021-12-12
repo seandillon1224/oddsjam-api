@@ -31,7 +31,7 @@ const futures = async () => {
   }
 };
 
-res();
+futures();
 ```
 
 This will yield you a strongly typed return value of the "futures" type based on the OddsJam API spec.
