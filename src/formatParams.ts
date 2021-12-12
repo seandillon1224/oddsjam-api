@@ -6,7 +6,8 @@
  * @returns Ready to go URL
  */
 
-export const createUrlWithParams = (url: string, params: Record<string, any>) => {
+export const createUrlWithParams = (url: string, params?: Record<string, any>) => {
+  if (!params) return url;
   let arr: string[][] = [];
   const parametersArray = Object.entries(params);
   for (const [key, val] of parametersArray) {
