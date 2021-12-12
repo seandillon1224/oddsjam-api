@@ -9,7 +9,7 @@
 export const createUrlWithParams = (url: string, params: Record<string, any>) => {
   let arr: string[][] = [];
   const parametersArray = Object.entries(params);
-  for (let [key, val] of parametersArray) {
+  for (const [key, val] of parametersArray) {
     if (!Array.isArray(val)) {
       arr.push([key, val]);
     } else {
